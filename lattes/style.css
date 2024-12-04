@@ -1,0 +1,162 @@
+body {
+  background: rgb(204, 204, 204);
+}
+
+page {
+  background: white;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  overflow: hidden;
+  /* font-family: monospace; */
+
+  font-family: "Lora", serif;
+}
+page[size="A4"] {
+  width: 21cm;
+  height: 29.7cm;
+}
+page[size="A4"][layout="landscape"] {
+  width: 29.7cm;
+  height: 21cm;
+}
+page[size="A3"] {
+  width: 29.7cm;
+  height: 42cm;
+}
+page[size="A3"][layout="landscape"] {
+  width: 42cm;
+  height: 29.7cm;
+}
+page[size="A5"] {
+  width: 14.8cm;
+  height: 21cm;
+}
+page[size="A5"][layout="landscape"] {
+  width: 21cm;
+  height: 14.8cm;
+}
+@media print {
+  body,
+  page {
+    background: white;
+    margin: 0;
+    box-shadow: 0;
+  }
+}
+
+.header {
+  height: 16%;
+  background-color: #303030;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .name {
+    flex-grow: 1;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 36px;
+  }
+
+  .contact {
+    width: 100%;
+    display: flex;
+    font-size: 0.8rem;
+    border-top: 1px white;
+    border-top-style: solid;
+
+    div {
+      padding: 1.3rem	0.6rem;
+    }
+
+    .email {
+      flex: 1;
+      text-align: end;
+    }
+
+    .phone {
+      flex: 1;
+    }
+  }
+}
+
+.skills {
+  display: flex;
+	align-items: stretch;
+
+  .skill {
+    display: flex;
+    padding: 0.25rem 0 0 1rem;
+		align-items: center;
+		width: 50%;
+
+		span {
+			width: 6rem;
+			font-size: 0.8rem;
+		}
+
+    .skill-dots {
+      display: flex;
+      align-items: center;
+    }
+
+    .skill-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #c7ced6;
+      margin: 0 5px;
+    }
+
+    .skill-dot.fill {
+      background: #303030;
+    }
+  }
+}
+
+.content {
+  padding: 2.5rem 6rem;
+
+  ul {
+    padding: 0;
+    list-style-type: none;
+  }
+
+  h2,
+  h3 {
+    color: #363941;
+  }
+
+  .employment {
+    margin: 0 0 1rem 0.4rem;
+  }
+}
+
+span {
+  color: #2b2e36;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+h4 {
+  margin: 0.4rem 0;
+  color: #595959;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+h3 {
+  margin: 0.4rem 0 0 0;
+  font-size: 1rem;
+}
+
+h2 {
+  margin: 0 0 0.4rem 0;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
